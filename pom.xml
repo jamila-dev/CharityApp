@@ -40,21 +40,7 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- MongoDB Starter (exclude default driver) -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-mongodb</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.mongodb</groupId>
-                    <artifactId>mongodb-driver-sync</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.mongodb</groupId>
-                    <artifactId>bson</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
+
 
 
 
@@ -88,6 +74,27 @@
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <scope>runtime</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>0.9.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+
+
+
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>8.0.1.Final</version>
         </dependency>
 
         <!-- Lombok -->

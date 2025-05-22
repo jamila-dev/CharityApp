@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="#{app.title}">Charity Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body>
+<div th:replace="~{fragments/navbar :: navbar}"></div>
+<div class="container my-5">
+    <h2 th:text="#{nav.about}">About Us</h2>
+    <p>We are dedicated to connecting donors with meaningful charity campaigns worldwide.</p>
+</div>
+<div th:replace="~{fragments/footer :: footer}"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
